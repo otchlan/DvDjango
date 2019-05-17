@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>IN app template</h1>
+    {{ object.title }}
+<br>
+    {% if object.description %} {{ object.description }}
+    {% else %} Coming Soon
+    {% endif %}
+<br>
+    {{ object.price }}
+<br>
+    {{ object.avalaiability }}
+
+<!-- z tego co widze nie można dwa razy urzyć w urls ścieżki do tego samego html
+    i wkleić 2 różnych produktów z models -->
+<p><h2>SUper</h2></p>
+<br>{{ sobject.title }}
+<br>{{ sobject.description }}
+<br>{{ sobject.price }}
+<br>{{ sobject.website }}
+
+{% endblock %}

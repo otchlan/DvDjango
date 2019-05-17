@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+</head>
+<body>
+{% extends 'base.html' %}
+
+{% block second %}
+<h1>ABOUT</h1>
+
+<br>
+{{ request.user }}
+<br>
+<br>
+{{ request.user.is_authenticated }}
+<br>
+
+
+
+{% endblock second %}
+
+
+
+</body>
+</html>
