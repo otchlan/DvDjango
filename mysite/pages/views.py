@@ -38,3 +38,6 @@ def main_view(request, *args, **kwargs):
 def product_detail_view(request, *args, **kwargs):
     return render(request,"/products")
 
+def logout_detail_view(request, *args, **kwargs):
+    return render(request,"logout.html")
+
