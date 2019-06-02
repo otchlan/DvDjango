@@ -1,6 +1,5 @@
 from django.shortcuts import render
 
-
 def home_view(request, *args, **kwargs):
     return render(request, "home.html", {})
 
@@ -26,7 +25,7 @@ def login_view(request, *args, **kwargs):
 
 def index_view(request, *args, **kwargs):
     numbers = [1,2,3,4]
-    name = 'Rafal Szuwaski'
+    name = 'JaiesImie'
 
     a = {'myName': name, 'numbers' : numbers}
 
