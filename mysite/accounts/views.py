@@ -1,3 +1,5 @@
+
+
 from django.shortcuts import render,redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.http import HttpResponse
@@ -11,10 +13,10 @@ def register_view(request):
             form.save()
             msg='You have succesfully Registered'
 
-            return redirect(request, "templates/home.html",{'msg':msg})
+            return redirect(request, "home.html",{'msg':msg})
 
 
     else:
         form = UserCreationForm()
-        args = {'form': form}
-        return render(request, "templates/register_f.html", args)
+        return render(request, "register.html", {'form': form})
+

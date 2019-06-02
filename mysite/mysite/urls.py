@@ -20,6 +20,7 @@ from django.contrib.auth.views import LoginView , LogoutView
 from mysite import views
 
 from pages.views import home_view,about_view,base_view, contact_view, test_view, index_view, main_view
+
 from products.views import product_detail_view, super_product_detail_view
 from accounts.views import register_view
 
@@ -40,7 +41,7 @@ urlpatterns = [
     path('login/', LoginView.as_view(template_name='login.html'), name="login"),
     path('logout/', LogoutView.as_view(template_name='logout.html'), name="logout"),
     path('products/', product_detail_view),
-    path('register_f/', register_view),
+    path('register/', register_view),
 
 
 ]
