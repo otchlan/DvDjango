@@ -29,7 +29,7 @@ app_name = "users"
 
 urlpatterns = [
     path(r'^$', views.login_redirect, name='login_redirect'),
-    path('', home_view, name='home' ),
+    path('', home_view, name='home'),
     path('about/',about_view),
     path('home/' , home_view),
     path('admin/', admin.site.urls),
