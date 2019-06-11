@@ -34,8 +34,6 @@ def index_view(request, *args, **kwargs):
 def main_view(request, *args, **kwargs):
     return render(request,"main.html")
 
-def product_detail_view(request, *args, **kwargs):
-    return render(request,"/products")
 
 def logout_detail_view(request, *args, **kwargs):
     return render(request,"logout.html")

@@ -8,10 +8,11 @@ def product_detail_view(request):
      #   'title':obj.title,
      #   'description': obj.description
    # }
+
     context = {
         'object': obj
     }
-    return render(request, "products/product_detail.html", context)
+    return render(request, "product_detail.html", context)
 
 def super_product_detail_view(request):
     objS = SuperProduct.objects.get(id=1)
@@ -19,4 +20,4 @@ def super_product_detail_view(request):
     context = {
         'sobject': objS
     }
-    return render(request, "products/detail.html", context)
+    return render(request, "s_product_detail.html", context)
